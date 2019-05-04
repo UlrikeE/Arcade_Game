@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+ul {
+  list-style: decimal;
+  text-align:left;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: #936;
+  font-size: 40px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+}
+
+button:hover {
+    background-color: #936;
+    color: white;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-height: 80px;
+  font-size: 1.5em;
+}
+
+#lifes{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+#lifes img {
+  width: 20px;
+  height: 30px;
+  vertical-align: baseline;
+}
+
+#points{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+#startDiv {
+  position: fixed;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#startText {
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+  align-items: center;
+  background-color: #936;
+  font-size: 1.5em;
+
+}
+
+#winDiv {
+  position: fixed;
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#winText{
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+  align-items: center;
+  background-color: #936;
+  font-size: 1em;
+}
+
+#gameOverDiv {
+  position: fixed;
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#gameOverText{
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+  align-items: center;
+  background-color: #936;
+  font-size: 1em;
+}

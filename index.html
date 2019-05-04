@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Frogger Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+<div id="startDiv">
+  <div id="startText">
+    <h1>Instructions</h1>
+    <ul>
+      <li>In order to win the game, you have to earn 100 points.</li>
+      <li>To earn points you have to help me get to the other side of the field and pick flowers.</li>
+      <li>You have 3 lifes and 1 bonus life. If you collide with a tractor you loose a life.</li>
+      <li>If you get run over by a tractor 4 times, you cannot help me - you loose.</li>
+    </ul>
+    <button class="play" value="startDiv" onclick="hideDiv(this.value)">Play</button>
+    <p></p>
+  </div>
+</div>
+<div id="winDiv">
+  <div id="winText">
+    <h1>You won!</h1>
+    <img src="images/char-cat-girl.png" alt="Char-cat-girl player">
+    <button class="play" value="winDiv" onclick="hideDiv(this.value)">Play again</button>
+    <p></p>
+  </div>
+</div>
+<div id="gameOverDiv">
+  <div id="gameOverText">
+    <h1>You lost!</h1>
+    <img src="images/enemy.png" alt="Enemy"><img src="images/char-cat-girl.png" alt="Char-cat-girl player">
+    <p>Remember the rules:</p>
+    <ul>
+      <li>In order to win the game, you have to earn 100 points.</li>
+      <li>To earn points you have to help me get to the other side of the field and pick flowers.</li>
+      <li>You have 3 lifes and 1 bonus life. If you collide with a tractor you loose a life.</li>
+      <li>If you get run over by a tractor 4 times, you cannot help me - you loose.</li>
+    </ul>
+    <button class="play" value="gameOverDiv" onclick="hideDiv(this.value)">Play again</button>
+    <p></p>
+  </div>
+</div>
+  <div class="container">
+    <div><h1 id="title">Help me pick the flowers!</h1></p>
+    <div id='lifes'>lifes: </div>
+    <div id='points'>Points: </div>
+</div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
